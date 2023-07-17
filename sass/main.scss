@@ -271,14 +271,13 @@ body {
 
 // ====================skills=====================================//
 
-
 .skills {
   padding-bottom: 3em;
 
   .skills__list {
     display: flex;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .skills__list-item {
@@ -309,19 +308,18 @@ body {
 
 .experience {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  font-size: 2.8rem;
+  font-size: 2rem;
   line-height: 1.6;
 
   &__box {
     position: relative;
-    display: flex;
-    align-items: flex-start;
   }
 
   &__job {
     flex-basis: 50%;
-    margin-right: 8rem;
+    margin-bottom: 2em;
 
     &-list-item {
       display: flex;
@@ -335,7 +333,6 @@ body {
 
   &__education {
     flex-basis: 50%;
-    margin-left: 8rem;
     &-list-item {
       display: flex;
       flex-direction: column;
@@ -345,15 +342,63 @@ body {
       color: $greenishBlue;
     }
   }
+  .divide {
+    border-bottom: 3px solid rgb(57, 198, 184);
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    margin-bottom: 2em;
+  }
 }
 
-.divide {
-  border-right: 3px solid $greenishBlue;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-}
+// .experience {
+//   display: flex;
+//   justify-content: space-between;
+//   font-size: 2.8rem;
+//   line-height: 1.6;
+
+//   &__box {
+//     position: relative;
+//     display: flex;
+//     align-items: flex-start;
+//   }
+
+//   &__job {
+//     flex-basis: 50%;
+//     margin-right: 8rem;
+
+//     &-list-item {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+//     &-list-span {
+//       color: $greenishBlue;
+//     }
+//   }
+
+//   &__education {
+//     flex-basis: 50%;
+//     margin-left: 8rem;
+//     &-list-item {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+//     &-span {
+//       color: $greenishBlue;
+//     }
+//   }
+// }
+
+// .divide {
+//   border-right: 3px solid $greenishBlue;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+// }
 
 // =====================Portfolio=============================
 .portfolio {
@@ -501,7 +546,7 @@ body {
   &__box-link {
     padding: 0 0.3em;
     font-size: 3.6rem;
-    color: $secondary-color;
+    color: $greenishBlue;
     text-decoration: none;
     transition: color 0.3s;
 
@@ -537,25 +582,28 @@ body {
       justify-content: space-evenly;
       align-items: center;
     }
-    &__pastimes{
+    &__pastimes {
       margin-top: 0;
     }
   }
 
   .skills {
+    &__list {
+      justify-content: space-around;
+    }
 
-  &__list {
-   justify-content: space-around;
-  }
+    .skills__list-item {
+      flex-basis: 10%;
 
-  .skills__list-item {
-    flex-basis: 10%;
-
-    i {
-      font-size: 4rem;
+      i {
+        font-size: 4rem;
+      }
     }
   }
-}
+
+  .divide {
+    margin-bottom: 1em;
+  }
 }
 //================media min-width 768px========================//
 
@@ -615,25 +663,51 @@ body {
     }
   }
   .skills {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .skills__list-item {
-  
-    font-size: 2.4rem;
-    flex-basis: 30%;
-    i {
-   
-      font-size: 5rem;
-    
+    .skills__list-item {
+      font-size: 2.4rem;
+      flex-basis: 30%;
+      i {
+        font-size: 5rem;
+      }
     }
   }
+
+  .experience {
+  
+    font-size: 2.2rem;
+    &__box {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__job {
+      flex-basis: 50%;
+      margin-right: 8rem;
+      margin-bottom: 0;
+    }
+
+    &__education {
+      margin-left: 8rem;
+    }
+  }
+  .experience{
+  
+ .divide {
+   transform: translateX(-50%) rotateZ(90deg);
+   position: absolute;
+    left: 50%;
+    width: 45%;
+  }
+  }
+ 
 }
 
-}
 //================media min-width 992px======================//
 
 @media (min-width: 992px) {
@@ -680,16 +754,18 @@ body {
     }
   }
 
- .skills {
-  .skills__list-item {
-  
-    font-size: 2.5rem;
-    flex-basis: 20%;
-    i {
-   
-      font-size: 6rem;
-    
+  .experience {
+    font-size: 2.8rem;
+  }
+
+  .skills {
+    .skills__list-item {
+      font-size: 2.5rem;
+      flex-basis: 20%;
+      i {
+        font-size: 6rem;
+      }
     }
   }
-}
+ 
 }

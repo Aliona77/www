@@ -357,18 +357,17 @@ body {
 
 .experience {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  font-size: 2.8rem;
+  font-size: 2rem;
   line-height: 1.6;
 }
 .experience__box {
   position: relative;
-  display: flex;
-  align-items: flex-start;
 }
 .experience__job {
   flex-basis: 50%;
-  margin-right: 8rem;
+  margin-bottom: 2em;
 }
 .experience__job-list-item {
   display: flex;
@@ -380,7 +379,6 @@ body {
 }
 .experience__education {
   flex-basis: 50%;
-  margin-left: 8rem;
 }
 .experience__education-list-item {
   display: flex;
@@ -390,13 +388,13 @@ body {
 .experience__education-span {
   color: rgb(57, 198, 184);
 }
-
-.divide {
-  border-right: 3px solid rgb(57, 198, 184);
-  height: 100%;
+.experience .divide {
+  border-bottom: 3px solid rgb(57, 198, 184);
+  width: 100%;
   position: absolute;
-  top: 0;
-  left: 50%;
+  bottom: 50%;
+  left: 0;
+  margin-bottom: 2em;
 }
 
 .portfolio {
@@ -535,7 +533,7 @@ body {
 .contact__box-link {
   padding: 0 0.3em;
   font-size: 3.6rem;
-  color: #ffd700;
+  color: rgb(57, 198, 184);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -572,6 +570,9 @@ body {
   }
   .skills .skills__list-item i {
     font-size: 4rem;
+  }
+  .divide {
+    margin-bottom: 1em;
   }
 }
 @media (min-width: 768px) {
@@ -628,6 +629,28 @@ body {
   .skills .skills__list-item i {
     font-size: 5rem;
   }
+  .experience {
+    font-size: 2.2rem;
+  }
+  .experience__box {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+  .experience__job {
+    flex-basis: 50%;
+    margin-right: 8rem;
+    margin-bottom: 0;
+  }
+  .experience__education {
+    margin-left: 8rem;
+  }
+  .experience .divide {
+    transform: translateX(-50%) rotateZ(90deg);
+    position: absolute;
+    left: 50%;
+    width: 45%;
+  }
 }
 @media (min-width: 992px) {
   .header {
@@ -664,6 +687,9 @@ body {
   }
   .about .download {
     margin-left: 6em;
+  }
+  .experience {
+    font-size: 2.8rem;
   }
   .skills .skills__list-item {
     font-size: 2.5rem;
