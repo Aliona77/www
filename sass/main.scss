@@ -1,0 +1,695 @@
+@import "./reset";
+@import "./colors";
+@import "./components";
+@import "./mixins";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Share Tech Mono", monospace;
+  background-image: linear-gradient(
+    to right top,
+    #000000,
+    #010101,
+    #020201,
+    #020202,
+    #030303
+  );
+  color: $main-color;
+}
+
+//========================header===================================//
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em;
+
+  &__list {
+    display: flex;
+    align-items: top;
+    margin-left: auto;
+
+    &-item {
+      margin-right: 15px;
+      &-img {
+        width: 24px;
+        height: 24px;
+      }
+      &-link {
+        &--logo {
+          position: absolute;
+          left: 50px;
+        }
+      }
+    }
+  }
+
+  .burger-btn {
+    order: 2;
+  }
+}
+
+//=====================navigation=================================//
+
+.burger-btn {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+  }
+
+  &:hover {
+    .burger-btn__bars::after,
+    .burger-btn__bars::before {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  &__bars,
+  &__bars::after,
+  &__bars::before {
+    @include burgerBtn;
+  }
+
+  &__bars {
+    width: 100%;
+
+    &::after {
+      top: 13px;
+      width: 60%;
+    }
+    &::before {
+      top: 27px;
+      width: 30%;
+      transition: width 0.3s;
+    }
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 48px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(100%);
+  transition: 0.8s cubic-bezier(0.65, 0.05, 0.36, 1);
+  background-color: $secondary-color;
+  z-index: 100;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+    margin: 0.5em 0;
+    padding: 0.1em 1.5em;
+    font-size: 1.8rem;
+    color: $dark;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+      background-color: $dark;
+      transition: height 0.5s;
+      content: "";
+      z-index: -1;
+      border-radius: 5px;
+    }
+
+    &:hover::after {
+      height: 100%;
+    }
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+@keyframes navItemsAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.nav-items-animation {
+  animation: navItemsAnimation 1.5s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  color: $dark;
+  background-color: $dark;
+}
+
+//==============hero=============================================//
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 75vh;
+  text-align: center;
+  margin-top: 2.2em;
+  @include bgImages("..img/hero/portrait-657116_1280.jpg");
+  background-attachment: scroll;
+
+  &__heading {
+    font-size: 3.4rem;
+    font-weight: 200;
+    margin-bottom: px;
+    // font-size: 4.8rem;
+    // font-weight: 300;
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    // font-size: 2.4rem;
+  }
+
+  &__btn {
+    margin-top: 2em;
+    padding: 0.8em 1.6em;
+    font-size: 1.6rem;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: $dark;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.6s;
+
+    &::before {
+      background-color: $dark;
+    }
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+// ===================about======================//
+.about {
+  display: flex;
+  flex-direction: column;
+
+  &__pastimes {
+    margin-top: 2em;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-bottom: 0.8em;
+    color: $greenishBlue;
+  }
+
+  &__list-item {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  &__list-available {
+    color: $greenishBlue;
+  }
+}
+
+.download-link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// ====================skills=====================================//
+
+
+.skills {
+  padding-bottom: 3em;
+
+  .skills__list {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  }
+
+  .skills__list-item {
+    position: relative;
+    font-size: 2.2rem;
+    flex-basis: 50%;
+    text-align: center;
+    padding: 2em;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $greenishBlue;
+
+      i {
+        color: $secondary-color;
+      }
+    }
+    i {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 4rem;
+      color: $greenishBlue;
+      transition: color 0.3s;
+    }
+  }
+}
+// ===================experience=======================
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.8rem;
+  line-height: 1.6;
+
+  &__box {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__job {
+    flex-basis: 50%;
+    margin-right: 8rem;
+
+    &-list-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-list-span {
+      color: $greenishBlue;
+    }
+  }
+
+  &__education {
+    flex-basis: 50%;
+    margin-left: 8rem;
+    &-list-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-span {
+      color: $greenishBlue;
+    }
+  }
+}
+
+.divide {
+  border-right: 3px solid $greenishBlue;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+// =====================Portfolio=============================
+.portfolio {
+  text-align: center;
+
+  .project {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 2.3em;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+
+    &__first {
+      @include bgImages("../img/portfolio/cinema-strip_1280.jpg");
+    }
+    &__second {
+      @include bgImages("../img/portfolio/webstudio_1280.jpg");
+    }
+    &__third {
+      @include bgImages("../img/portfolio/image_search_1280.jpg");
+    }
+    // &:hover {
+    //   transform: translateY(-5px);
+    // }
+    &__shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    &__title {
+      font-size: 2.8rem;
+      margin-bottom: 0.8em;
+      color: $secondary-color;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 5px $text-shadow-color;
+    }
+
+    &__description {
+      font-size: 2.3rem;
+      margin-bottom: 1.5em;
+      font-weight: 300;
+      text-shadow: 2px 2px 5px $text-shadow-color;
+    }
+
+    &__btn-more {
+      display: inline-block;
+      font-size: 2rem;
+      padding: 10px 20px;
+      background-color: $secondary-color;
+      font-weight: 700;
+      color: $dark;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.5s ease;
+      border: none;
+      &::before {
+        background-color: $dark;
+      }
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+// ===================contact================================//
+
+.contact {
+  padding-bottom: 14em;
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    font-size: 2.3rem;
+  }
+
+  &__form-box {
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    textarea {
+      max-width: 100%;
+      width: 100%;
+      min-width: 100%;
+      font-size: 2.3rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.8em 2em;
+      margin-bottom: 2em;
+      font-size: 2.3rem;
+      width: 100%;
+      color: $main-color;
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:focus {
+        outline: none;
+        border: 1px solid $secondary-color;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__form-btn {
+    display: inline-block;
+    flex-basis: 50%;
+    font-size: 2rem;
+    padding: 1em;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    &::before {
+      background-color: $dark;
+    }
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+  }
+
+  &__box-social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__box-link {
+    padding: 0 0.3em;
+    font-size: 3.6rem;
+    color: $secondary-color;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// ==================footer=========================================//
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5em;
+  border-top: 1px solid rgb(27, 25, 25);
+  &__text {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+}
+
+// ===============================
+// MEDIA
+// ===============================
+
+//================media min-width 576px========================//
+
+@media (min-width: 576px) {
+  .about {
+    &__box {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &__pastimes{
+      margin-top: 0;
+    }
+  }
+
+  .skills {
+
+  &__list {
+   justify-content: space-around;
+  }
+
+  .skills__list-item {
+    flex-basis: 10%;
+
+    i {
+      font-size: 4rem;
+    }
+  }
+}
+}
+//================media min-width 768px========================//
+
+@media (min-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1em;
+
+    &__list {
+      order: 1;
+      margin-bottom: 10px;
+
+      &-item-img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .burger-btn {
+      &__box {
+        width: 33px;
+        height: 24px;
+      }
+    }
+  }
+
+  .hero {
+    &__heading {
+      font-size: 4.8rem;
+    }
+    &__text {
+      font-size: 2.4rem;
+      line-height: 1.4;
+    }
+
+    &__btn {
+      font-size: 2rem;
+    }
+  }
+  .nav {
+    width: 40%;
+    border-top-left-radius: 30px;
+    &__item {
+      font-size: 2.6rem;
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 2.6rem;
+    }
+
+    &__list-item {
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+      line-height: 1.6;
+    }
+  }
+  .skills {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills__list-item {
+  
+    font-size: 2.4rem;
+    flex-basis: 30%;
+    i {
+   
+      font-size: 5rem;
+    
+    }
+  }
+}
+
+}
+//================media min-width 992px======================//
+
+@media (min-width: 992px) {
+  .header {
+    padding: 0.8em;
+    &__list {
+      margin-right: 30px;
+
+      &-item-img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+  .nav {
+    width: 25%;
+    &__item {
+      font-size: 2.8rem;
+    }
+  }
+  .hero {
+    background-image: url("../img/hero/portrait-657116_1280.jpg");
+
+    &__heading {
+      font-size: 7rem;
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__list-item {
+      font-size: 2.8rem;
+    }
+    .download {
+      margin-left: 6em;
+    }
+  }
+
+ .skills {
+  .skills__list-item {
+  
+    font-size: 2.5rem;
+    flex-basis: 20%;
+    i {
+   
+      font-size: 6rem;
+    
+    }
+  }
+}
+}

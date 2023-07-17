@@ -1,0 +1,34 @@
+
+a {
+    text-decoration: none;
+}
+ 
+ul, 
+li{
+    list-style-type:none;
+}
+img {
+	height: auto;
+}
+ 
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+ 
+button {
+    border: none;
+    cursor: pointer;
+}
+ 
+ 
+textarea {
+    resize: vertical;
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/25762a3327.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>CV</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="home">
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a
+            class="header__list-item-link header__list-item-link--logo"
+            href="index.html"
+          >
+            <img class="header__list-item-img" 
+              src="./img/icons/chess.svg"
+              alt="chess piece"
+             
+            />
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-item-link" href="#">
+            <img class="header__list-item-img" 
+              src="./img/icons/us.svg"
+              alt="USA Flag"
+            
+            />
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-item-link" href="#">
+            <img class="header__list-item-img"
+              src="./img/icons/ua.svg"
+              alt="Ukraine Flag"
+            
+            />
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-item-link" href="#">
+            <img class="header__list-item-img"
+              src="./img/icons/pl.svg"
+              alt="Poland Flag"
+           
+            />
+          </a>
+        </li>
+      </ul>
+
+      <button class="burger-btn">
+        <div class="burger-btn__box">
+          <div class="burger-btn__bars"></div>
+        </div>
+      </button>
+      <nav class="nav">
+        <div class="nav__items">
+          <a href="#home" class="nav__item">Home</a>
+          <a href="#about" class="nav__item">About</a>
+          <a href="#skills" class="nav__item">Skills</a>
+          <a href="#experience" class="nav__item"
+            >Experience & <br />
+            Education</a
+          >
+          <a href="#portfolio" class="nav__item">Portfolio</a>
+          <a href="#contact" class="nav__item">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- hero section -->
+      <div class="wrapper">
+        <section class="hero section">
+          <h1 class="hero__heading">
+            Hi, my name is <span style="color: rgb(57, 198, 184)">Aliona</span>
+          </h1>
+          <p class="hero__text">
+            I am a front-end developer skilled in HTML, CSS, and JavaScript,
+            specializing in creating visually appealing and user-friendly
+            websites.
+          </p>
+          <a href="#about" class="btn hero__btn btn-special-animation"
+            >View more</a
+          >
+        </section>
+      </div>
+      <!-- about -->
+      <section class="about section-padding section" id="about">
+        <div class="wrapper">
+          <h2 class="section-heading">About me</h2>
+          <div class="about__box">
+            <div class="about__info">
+              <h3 class="about__title">personal information</h3>
+              <ul class="about__list">
+                <li class="about__list-item">Full Name: Aliona Chaban</li>
+                <li class="about__list-item">Age: 26 Years</li>
+                <li class="about__list-item">Nationality: Ukrainian</li>
+                <li class="about__list-item">
+                  Languages: Ukrainian, English, Polish
+                </li>
+                <li class="about__list-item">
+                  Freelance:
+                  <span class="about__list-available">Available</span>
+                </li>
+              </ul>
+            </div>
+            <div class="about__pastimes">
+              <h3 class="about__title">my pastimes</h3>
+              <ul class="about__pastimes-list">
+                <li class="about__list-item">-Chess</li>
+                <li class="about__list-item">-Cycling</li>
+                <li class="about__list-item">-Walking</li>
+                <li class="about__list-item">-Reading</li>
+                <li class="about__list-item">-Traveling</li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn hero__btn btn-special-animation download">
+            <a class="download-link" href="./cv/Chaban_Aliona_CV.pdf" download>Download CV</a
+            >
+          </button>
+        </div>
+      </section>
+
+      <!-- skills -->
+
+    <section class="skills section-padding section" id="skills"> 
+        <div class="wrapper">
+          <h2 class="section-heading">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__list-item">
+              <i class="fa-brands fa-html5"></i> HTML
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-brands fa-css3-alt"></i> CSS/SASS
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-brands fa-bootstrap"></i> Bootstrap
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-brands fa-square-js"></i> JavaScript
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-brands fa-react"></i> React
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-solid fa-cube"></i> WebPack
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-brands fa-square-github"></i> GIT
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-brands fa-node-js"></i> Node
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-solid fa-fire"></i> Firebase
+            </li>
+            <li class="skills__list-item">
+              <i class="fa-brands fa-figma"></i> Figma
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- experience -->
+  <section class="experience section-padding section" id="experience">
+        <div class="wrapper">
+          <h2 class="section-heading">Experience & education</h2>
+          <div class="experience__box">
+            <div class="experience__job">
+              <ul class="experience__job-list">
+                <li class="experience__job-list-item">
+                  <span class="experience__job-list-span"
+                    >2022.04 - present</span
+                  >
+                  <p>Junior Security Analyst → SC2Labs</p>
+                </li>
+                <li class="experience__job-list-item">
+                  <span class="experience__job-list-span"
+                    >2020.12 – 2022.02</span
+                  >
+                  <p>
+                    Assistant land surveyor → Private individual Kuzhel Mikhail
+                    Vasilyevich
+                  </p>
+                </li>
+                <li class="experience__job-list-item">
+                  <span class="experience__job-list-span"
+                    >2018.07 - 2020.11</span
+                  >
+                  <p>Shop assistant → Products from Europe</p>
+                </li>
+              </ul>
+            </div>
+            <div class="divide"></div>
+            <div class="experience__education">
+              <ul class="experience__education-list">
+                <li class="experience__education-list-item">
+                  <span class="experience__education-span"
+                    >2020.11 – 2021.11</span
+                  >
+                  <p>Full-stack developer → IT School GoIT</p>
+                </li>
+                <li class="experience__education-list-item">
+                  <span class="experience__education-span"
+                    >2014.09 – 2019.12</span
+                  >
+                  <p>
+                    Master degree, geodesy and land management → National
+                    University of Water Wanagement and Environmental Engineering
+                  </p>
+                </li>
+                <li class="experience__education-list-item">
+                  <span class="experience__education-span"
+                    >2003.09 – 2014.09</span
+                  >
+                  <p>Lipnenska secondary school I-III degree</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- portfolio -->
+    <section class="portfolio section-padding section" id="portfolio">
+        <div class="wrapper">
+          <h2 class="section-heading">Portfolio</h2>
+
+          <div class="project project__first">
+            <div class="project__shadow"></div>
+            <h3 class="project__title">Filmoteka</h3>
+            <p class="project__description">
+              Filmoteka is a comprehensive movie search platform that allows
+              users to explore a vast collection of movies and discover the
+              latest trending films. With Filmoteka, you can easily search for
+              movies. Stay up to date with the hottest movies in the industry
+              and get access to trailers, ratings, and other essential details.
+              Whether you're a casual moviegoer or a dedicated cinephile,
+              Filmoteka is your go-to resource for finding and exploring movies
+            </p>
+            <a
+              class="project__btn-more btn-special-animation"
+              href="https://dmitriy-snitko.github.io/project_group_10/#"
+              target="_blank"
+              >More</a
+            >
+          </div>
+
+          <div class="project project__second">
+            <div class="project__shadow"></div>
+            <h3 class="project__title">WebStudio</h3>
+            <p class="project__description">
+              Web Studio - platform that showcases the benefits of working with
+              a small, dedicated team. Specialize in offering a range of
+              services tailored to meet your digital needs. Whether you require
+              web design, development, branding, or consultation, team is here
+              to deliver exceptional results. Explore portfolio and client list
+              to see the successful completed projects.
+            </p>
+            <a
+              class="project__btn-more btn-special-animation"
+              href="https://aliona77.github.io/goit-markup-hw-08/index.html"
+              target="_blank"
+              >More</a
+            >
+          </div>
+
+          <div class="project project__third">
+            <div class="project__shadow"></div>
+            <h3 class="project__title">Image Search</h3>
+            <p class="project__description">
+              Image discovery platform, where you can search and immerse
+              yourself in a collection of your best images. Project is designed
+              to provide a seamless and visually captivating experience,
+              allowing you to easily explore and find your favorite pictures.
+              Discover a vast array of images and enjoy the beauty and memories
+              captured in each photograph
+            </p>
+            <a
+              class="project__btn-more btn-special-animation"
+              href="https://aliona77.github.io/goit-react-hw-03-image-finder/"
+              target="_blank"
+              >More</a
+            >
+          </div>
+        </div>
+      </section> 
+
+      <!-- contact -->
+
+  <section class="contact section-padding section" id="contact">
+        <div class="wrapper">
+          <h2 class="section-heading">Contact</h2>
+
+          <form class="contact__form">
+            <div class="contact__form-box">
+              <label for="name">Your name:</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="contact__form-box">
+              <label for="mail">Your email:</label>
+              <input type="mail" id="mail" />
+            </div>
+            <div class="contact__form-box">
+              <label for="msg">Message:</label>
+              <textarea id="msg" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="contact__form-btn btn-special-animation">Send</button>
+            <div class="contact__box-social">
+              <a href="https://www.facebook.com/ch.aliona.an/" class="contact__box-link" target="_blank"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a href="https://www.instagram.com/aliona_4h/" class="contact__box-link" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+                <a href="https://www.linkedin.com/in/aliona-chaban-21b5841a8/" class="contact__box-link" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p class="footer__text">
+          &copy; <span class="footer__year"></span> All rights reserved
+        </p>
+      </div>
+    </footer> 
+    <script src="./js/send-email.js"></script> 
+    <script src="./js/main.js"></script>
+  </body>
+</html>
