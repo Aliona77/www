@@ -74,7 +74,7 @@ table {
 }
 
 .section-padding {
-  padding: 6em 2em;
+  padding: 4em 2em;
 }
 
 @media (min-width: 768px) {
@@ -82,7 +82,7 @@ table {
     font-size: 3.6rem;
   }
   .section-padding {
-    padding: 7em 2em;
+    padding: 6em 2em;
   }
 }
 @media (min-width: 992px) {
@@ -90,7 +90,7 @@ table {
     font-size: 4.8rem;
   }
   .section-padding {
-    padding: 9em 2em;
+    padding: 8em 2em;
   }
 }
 *,
@@ -572,7 +572,8 @@ body {
     font-size: 4rem;
   }
   .divide {
-    margin-bottom: 1em;
+    position: absolute;
+    transform: translateY(1000%);
   }
 }
 @media (min-width: 768px) {
@@ -646,10 +647,12 @@ body {
     margin-left: 8rem;
   }
   .experience .divide {
-    transform: translateX(-50%) rotateZ(90deg);
+    border: none;
+    border-right: 3px solid rgb(57, 198, 184);
+    height: 100%;
+    top: 0;
+    transform: translateX(-50%);
     position: absolute;
-    left: 50%;
-    width: 45%;
   }
 }
 @media (min-width: 992px) {

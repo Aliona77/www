@@ -602,7 +602,8 @@ body {
   }
 
   .divide {
-    margin-bottom: 1em;
+    position: absolute;
+    transform: translateY(1000%);
   }
 }
 //================media min-width 768px========================//
@@ -697,12 +698,13 @@ body {
     }
   }
   .experience{
-  
  .divide {
-   transform: translateX(-50%) rotateZ(90deg);
-   position: absolute;
-    left: 50%;
-    width: 45%;
+  border: none;
+  border-right: 3px solid $greenishBlue;
+  height: 100%;
+  top: 0;
+  transform: translateX(-50%);
+  position: absolute;
   }
   }
  
