@@ -461,7 +461,7 @@ body {
 }
 .portfolio .project__btn-more {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 10px 20px;
   background-color: #ffd700;
   font-weight: 700;
@@ -693,7 +693,7 @@ body {
     font-size: 2rem;
   }
   .portfolio .project__btn-more {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 992px) {
