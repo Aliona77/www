@@ -7,12 +7,13 @@ const footerYear = document.querySelector('.footer__year');
 
 const handleNav = () =>{
     nav.classList.toggle('nav--active');
- 
+    navBtnBars.classList.toggle("black-bars-color");
+    navBtn.classList.toggle("black-bars-border");
     
     allNavItems.forEach(item=>{
         item.addEventListener('click', () =>{
             nav.classList.remove('nav--active');
-             navBtnBars.style.backgroundColor = "";
+            navBtnBars.style.backgroundColor = "";
         })
     })
 

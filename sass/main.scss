@@ -54,6 +54,7 @@ body {
         &--logo {
           position: absolute;
           left: 50px;
+
         }
       }
     }
@@ -183,6 +184,12 @@ body {
   color: $dark;
   background-color: $dark;
 }
+.black-bars-border {
+  &:focus {
+  border: 1px solid rgb(220, 190, 15);
+ 
+  }
+}
 
 //==============hero=============================================//
 .hero {
@@ -202,15 +209,14 @@ body {
     font-size: 3.4rem;
     font-weight: 200;
     margin-bottom: px;
-    // font-size: 4.8rem;
-    // font-weight: 300;
   }
 
   &__text {
     font-size: 2.2rem;
-    // font-size: 2.4rem;
   }
-
+  &__span{
+   color: $greenishBlue;
+  }
   &__btn {
     margin-top: 2em;
     padding: 0.8em 1.6em;
