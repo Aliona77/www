@@ -54,7 +54,6 @@ body {
         &--logo {
           position: absolute;
           left: 50px;
-
         }
       }
     }
@@ -186,8 +185,7 @@ body {
 }
 .black-bars-border {
   &:focus {
-  border: 1px solid rgb(220, 190, 15);
- 
+    border: 1px solid rgb(220, 190, 15);
   }
 }
 
@@ -214,8 +212,8 @@ body {
   &__text {
     font-size: 2rem;
   }
-  &__span{
-   color: $greenishBlue;
+  &__span {
+    color: $greenishBlue;
   }
   &__btn {
     margin-top: 2em;
@@ -358,7 +356,6 @@ body {
   }
 }
 
-
 // =====================Portfolio=============================
 .portfolio {
   text-align: center;
@@ -373,7 +370,6 @@ body {
 
     &__first {
       @include bgImages("../img/portfolio/cinema-strip_640.jpg");
-
     }
     &__second {
       @include bgImages("../img/portfolio/webstudio_640.jpg");
@@ -565,13 +561,12 @@ body {
     position: absolute;
     transform: translateY(1000%);
   }
-  .contact{
-     &__form-btn {
-    flex-basis: 50%;
-    padding: 1em;
-
+  .contact {
+    &__form-btn {
+      flex-basis: 50%;
+      padding: 1em;
+    }
   }
-}
 }
 //================media min-width 768px========================//
 
@@ -646,7 +641,6 @@ body {
   }
 
   .experience {
-  
     font-size: 1.8rem;
     &__box {
       position: relative;
@@ -664,47 +658,40 @@ body {
       margin-left: 8rem;
     }
   }
-  .experience{
- .divide {
-  border: none;
-  border-right: 3px solid $greenishBlue;
-  height: 100%;
-  top: 0;
-  transform: translateX(-50%);
-  position: absolute;
-  }
+  .experience {
+    .divide {
+      border: none;
+      border-right: 3px solid $greenishBlue;
+      height: 100%;
+      top: 0;
+      transform: translateX(-50%);
+      position: absolute;
+    }
   }
 
   .portfolio {
-  .project {
+    .project {
+      &__first {
+        @include bgImages("../img/portfolio/cinema-strip_1280.jpg");
+      }
+      &__second {
+        @include bgImages("../img/portfolio/webstudio_1280.jpg");
+      }
+      &__third {
+        @include bgImages("../img/portfolio/image_search_1280.jpg");
+      }
+      &__title {
+        font-size: 2.4rem;
+      }
 
-    &__first {
-      @include bgImages("../img/portfolio/cinema-strip_1280.jpg");
- 
-
+      &__description {
+        font-size: 2rem;
+      }
+      &__btn-more {
+        font-size: 1.9rem;
+      }
     }
-    &__second {
-      @include bgImages("../img/portfolio/webstudio_1280.jpg");
-
-    }
-    &__third {
-      @include bgImages("../img/portfolio/image_search_1280.jpg");
-   
-    }
-    &__title {
-      font-size: 2.4rem;
-    }
-
-    &__description {
-      font-size: 2rem;
-    }
-    &__btn-more{
-      font-size: 1.9rem;
-    }
-
   }
-}
- 
 }
 
 //================media min-width 992px======================//
@@ -749,7 +736,7 @@ body {
       font-size: 2.5rem;
     }
     .download {
-      margin-left: 8.6em;
+      margin-left: 8.3em;
     }
   }
 
@@ -767,21 +754,17 @@ body {
     }
   }
   .experience {
-  
     font-size: 2rem;
   }
-    .portfolio {
-  .project {
+  .portfolio {
+    .project {
+      &__title {
+        font-size: 2.2rem;
+      }
 
-    &__title {
-      font-size: 2.2rem;
+      &__description {
+        font-size: 1.9rem;
+      }
     }
-
-    &__description {
-      font-size: 1.9rem;
-    }
-
   }
-}
- 
 }
