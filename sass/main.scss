@@ -352,53 +352,6 @@ body {
   }
 }
 
-// .experience {
-//   display: flex;
-//   justify-content: space-between;
-//   font-size: 2.8rem;
-//   line-height: 1.6;
-
-//   &__box {
-//     position: relative;
-//     display: flex;
-//     align-items: flex-start;
-//   }
-
-//   &__job {
-//     flex-basis: 50%;
-//     margin-right: 8rem;
-
-//     &-list-item {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-start;
-//     }
-//     &-list-span {
-//       color: $greenishBlue;
-//     }
-//   }
-
-//   &__education {
-//     flex-basis: 50%;
-//     margin-left: 8rem;
-//     &-list-item {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-start;
-//     }
-//     &-span {
-//       color: $greenishBlue;
-//     }
-//   }
-// }
-
-// .divide {
-//   border-right: 3px solid $greenishBlue;
-//   height: 100%;
-//   position: absolute;
-//   top: 0;
-//   left: 50%;
-// }
 
 // =====================Portfolio=============================
 .portfolio {
@@ -413,13 +366,14 @@ body {
     z-index: 1;
 
     &__first {
-      @include bgImages("../img/portfolio/cinema-strip_1280.jpg");
+      @include bgImages("../img/portfolio/cinema-strip_640.jpg");
+
     }
     &__second {
-      @include bgImages("../img/portfolio/webstudio_1280.jpg");
+      @include bgImages("../img/portfolio/webstudio_640.jpg");
     }
     &__third {
-      @include bgImages("../img/portfolio/image_search_1280.jpg");
+      @include bgImages("../img/portfolio/image_seacrh_640.jpg");
     }
     // &:hover {
     //   transform: translateY(-5px);
@@ -435,16 +389,16 @@ body {
     }
 
     &__title {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       margin-bottom: 0.8em;
-      color: $secondary-color;
+      color: $greenishBlue;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       text-shadow: 2px 2px 5px $text-shadow-color;
     }
 
     &__description {
-      font-size: 2.3rem;
+      font-size: 2rem;
       margin-bottom: 1.5em;
       font-weight: 300;
       text-shadow: 2px 2px 5px $text-shadow-color;
@@ -520,9 +474,9 @@ body {
 
   &__form-btn {
     display: inline-block;
-    flex-basis: 50%;
+    flex-basis: 30%;
     font-size: 2rem;
-    padding: 1em;
+    padding: 0.5em;
     background-color: $secondary-color;
     border: 1px solid $secondary-color;
     font-weight: bold;
@@ -605,6 +559,13 @@ body {
     position: absolute;
     transform: translateY(1000%);
   }
+  .contact{
+     &__form-btn {
+    flex-basis: 50%;
+    padding: 1em;
+
+  }
+}
 }
 //================media min-width 768px========================//
 
@@ -707,6 +668,33 @@ body {
   position: absolute;
   }
   }
+
+  .portfolio {
+  .project {
+
+    &__first {
+      @include bgImages("../img/portfolio/cinema-strip_1280.jpg");
+ 
+
+    }
+    &__second {
+      @include bgImages("../img/portfolio/webstudio_1280.jpg");
+
+    }
+    &__third {
+      @include bgImages("../img/portfolio/image_search_1280.jpg");
+   
+    }
+    &__title {
+      font-size: 2.8rem;
+    }
+
+    &__description {
+      font-size: 2.3rem;
+    }
+
+  }
+}
  
 }
 

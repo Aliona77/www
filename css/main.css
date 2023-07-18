@@ -409,21 +409,21 @@ body {
   z-index: 1;
 }
 .portfolio .project__first {
-  background-image: url("../img/portfolio/cinema-strip_1280.jpg");
+  background-image: url("../img/portfolio/cinema-strip_640.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .portfolio .project__second {
-  background-image: url("../img/portfolio/webstudio_1280.jpg");
+  background-image: url("../img/portfolio/webstudio_640.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .portfolio .project__third {
-  background-image: url("../img/portfolio/image_search_1280.jpg");
+  background-image: url("../img/portfolio/image_seacrh_640.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -439,15 +439,15 @@ body {
   z-index: -1;
 }
 .portfolio .project__title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin-bottom: 0.8em;
-  color: #ffd700;
+  color: rgb(57, 198, 184);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .portfolio .project__description {
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin-bottom: 1.5em;
   font-weight: 300;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
@@ -510,9 +510,9 @@ body {
 }
 .contact__form-btn {
   display: inline-block;
-  flex-basis: 50%;
+  flex-basis: 30%;
   font-size: 2rem;
-  padding: 1em;
+  padding: 0.5em;
   background-color: #ffd700;
   border: 1px solid #ffd700;
   font-weight: bold;
@@ -574,6 +574,10 @@ body {
   .divide {
     position: absolute;
     transform: translateY(1000%);
+  }
+  .contact__form-btn {
+    flex-basis: 50%;
+    padding: 1em;
   }
 }
 @media (min-width: 768px) {
@@ -653,6 +657,33 @@ body {
     top: 0;
     transform: translateX(-50%);
     position: absolute;
+  }
+  .portfolio .project__first {
+    background-image: url("../img/portfolio/cinema-strip_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .portfolio .project__second {
+    background-image: url("../img/portfolio/webstudio_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .portfolio .project__third {
+    background-image: url("../img/portfolio/image_search_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .portfolio .project__title {
+    font-size: 2.8rem;
+  }
+  .portfolio .project__description {
+    font-size: 2.3rem;
   }
 }
 @media (min-width: 992px) {
