@@ -395,7 +395,7 @@ body {
     }
 
     &__title {
-      font-size: 2.6rem;
+      font-size: 1.7rem;
       margin-bottom: 0.8em;
       color: $greenishBlue;
       text-transform: uppercase;
@@ -404,7 +404,7 @@ body {
     }
 
     &__description {
-      font-size: 2rem;
+      font-size: 1.4rem;
       margin-bottom: 1.5em;
       font-weight: 300;
       text-shadow: 2px 2px 5px $text-shadow-color;
@@ -412,7 +412,7 @@ body {
 
     &__btn-more {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 10px 20px;
       background-color: $secondary-color;
       font-weight: 700;
@@ -600,10 +600,10 @@ body {
 
   .hero {
     &__heading {
-      font-size: 4.6rem;
+      font-size: 4.7rem;
     }
     &__text {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       line-height: 1.4;
     }
 
@@ -647,7 +647,7 @@ body {
 
   .experience {
   
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     &__box {
       position: relative;
       display: flex;
@@ -692,11 +692,14 @@ body {
    
     }
     &__title {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
 
     &__description {
-      font-size: 2.3rem;
+      font-size: 2rem;
+    }
+    &__btn-more{
+      font-size: 1.9rem;
     }
 
   }
@@ -739,14 +742,14 @@ body {
 
   .about {
     &__title {
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
 
     &__list-item {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
     .download {
-      margin-left: 6em;
+      margin-left: 8.6em;
     }
   }
 
@@ -759,9 +762,26 @@ body {
       font-size: 2.5rem;
       flex-basis: 20%;
       i {
-        font-size: 6rem;
+        font-size: 5rem;
       }
     }
   }
+  .experience {
+  
+    font-size: 2rem;
+  }
+    .portfolio {
+  .project {
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__description {
+      font-size: 1.9rem;
+    }
+
+  }
+}
  
 }

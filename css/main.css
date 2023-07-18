@@ -446,7 +446,7 @@ body {
   z-index: -1;
 }
 .portfolio .project__title {
-  font-size: 2.6rem;
+  font-size: 1.7rem;
   margin-bottom: 0.8em;
   color: rgb(57, 198, 184);
   text-transform: uppercase;
@@ -454,14 +454,14 @@ body {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .portfolio .project__description {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 1.5em;
   font-weight: 300;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .portfolio .project__btn-more {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 20px;
   background-color: #ffd700;
   font-weight: 700;
@@ -606,10 +606,10 @@ body {
     height: 24px;
   }
   .hero__heading {
-    font-size: 4.6rem;
+    font-size: 4.7rem;
   }
   .hero__text {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     line-height: 1.4;
   }
   .hero__btn {
@@ -642,7 +642,7 @@ body {
     font-size: 5rem;
   }
   .experience {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   .experience__box {
     position: relative;
@@ -687,10 +687,13 @@ body {
     background-repeat: no-repeat;
   }
   .portfolio .project__title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   .portfolio .project__description {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+  .portfolio .project__btn-more {
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 992px) {
@@ -721,13 +724,13 @@ body {
     font-size: 5rem;
   }
   .about__title {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .about__list-item {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .about .download {
-    margin-left: 6em;
+    margin-left: 8.6em;
   }
   .experience {
     font-size: 2.8rem;
@@ -737,6 +740,15 @@ body {
     flex-basis: 20%;
   }
   .skills .skills__list-item i {
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+  .experience {
+    font-size: 2rem;
+  }
+  .portfolio .project__title {
+    font-size: 2.2rem;
+  }
+  .portfolio .project__description {
+    font-size: 1.9rem;
   }
 }/*# sourceMappingURL=main.css.map */
