@@ -30,7 +30,9 @@ const submitForm = (e) => {
     return; 
   }
 
-  const mailtoLink = 'mailto:chaban.aliona1@gmail.com';
+   const mailtoLink = `mailto:chaban.aliona1@gmail.com?&body=${encodeURIComponent(
+     `${message}`
+   )}`;
 
   window.location.href = mailtoLink;
 
