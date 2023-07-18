@@ -13,7 +13,8 @@ const handleNav = () =>{
     allNavItems.forEach(item=>{
         item.addEventListener('click', () =>{
             nav.classList.remove('nav--active');
-            navBtnBars.style.backgroundColor = "";
+            navBtnBars.classList.remove("black-bars-color");
+            navBtn.classList.remove("black-bars-border");
         })
     })
 
