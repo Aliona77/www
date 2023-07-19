@@ -74,7 +74,7 @@ table {
 }
 
 .section-padding {
-  padding: 4em 2em;
+  padding: 6em 4em;
 }
 
 @media (min-width: 768px) {
@@ -82,7 +82,7 @@ table {
     font-size: 3rem;
   }
   .section-padding {
-    padding: 5em 2em;
+    padding: 8em 4em;
   }
 }
 @media (min-width: 992px) {
@@ -90,7 +90,7 @@ table {
     font-size: 4rem;
   }
   .section-padding {
-    padding: 6em 2em;
+    padding: 10em 4em;
   }
 }
 *,
@@ -310,12 +310,12 @@ body {
 }
 .about__title {
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   margin-bottom: 0.8em;
   color: rgb(57, 198, 184);
 }
 .about__list-item {
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   line-height: 1.4;
 }
