@@ -1,4 +1,4 @@
-@import './colors';
+@import "./colors";
 
 .wrapper {
   margin: 0 auto;
@@ -62,49 +62,42 @@
   color: $greenishBlue;
 }
 
-.section-heading{
-position: relative;
-margin-bottom: 2em;
-font-size: 2rem;
-font-weight: 900;
-letter-spacing: 10px;
-text-transform: uppercase;
-text-align: center;
-color: $secondary-color;
-
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-color;
 }
 
-.section-padding{
-padding: 6em 2em;
+.section-padding {
+  padding: 6em 2em;
 }
 
 @media (min-width: 576px) {
-   .scroll-to-top-btn {
-  right: 4em;
-  
-}
-
-  
+  .scroll-to-top-btn {
+    right: 4em;
+  }
 }
 
 @media (min-width: 768px) {
-  .section-heading{
+  .section-heading {
     font-size: 3rem;
   }
 
-  .section-padding{
+  .section-padding {
     padding: 8em 4em;
   }
-
-  
 }
 @media (min-width: 992px) {
-  .section-heading{
+  .section-heading {
     font-size: 4rem;
   }
 
-  .section-padding{
+  .section-padding {
     padding: 10em 4em;
   }
-  
 }

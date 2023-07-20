@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const footer = document.getElementById("footer");
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -10,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     return footerOffset < windowHeight;
   }
-
 
   function toggleScrollToTopButton() {
     scrollToTopBtn.style.display = isFooterInView() ? "flex" : "none";
