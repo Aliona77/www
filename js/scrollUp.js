@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return footerOffset < windowHeight;
   }
 
-  // Function to show or hide the button based on the section in view
+
   function toggleScrollToTopButton() {
     scrollToTopBtn.style.display = isFooterInView() ? "flex" : "none";
   }
