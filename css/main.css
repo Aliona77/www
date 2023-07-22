@@ -299,20 +299,31 @@ body {
   height: 75vh;
   text-align: center;
   margin-top: 2.2em;
-  background-image: url("..img/hero/portrait-657116_1280.jpg");
+  background-image: url("../img/hero/bg3.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: scroll;
+}
+.hero .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 .hero__heading {
   font-size: 3.2rem;
   font-weight: 200;
   margin-bottom: 10px;
+  z-index: 1;
 }
 .hero__text {
   font-size: 2rem;
+  z-index: 1;
 }
 .hero__span {
   color: rgb(57, 198, 184);
@@ -329,6 +340,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   transition: color 0.6s;
+  z-index: 1;
 }
 .hero__btn::before {
   background-color: #000;
@@ -450,26 +462,24 @@ body {
   border-radius: 6px;
   transition: transform 0.3s ease;
   z-index: 1;
+  background-attachment: fixed;
 }
 .portfolio .project__first {
   background-image: url("../img/portfolio/cinema-strip_640.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .portfolio .project__second {
   background-image: url("../img/portfolio/webstudio_640.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .portfolio .project__third {
   background-image: url("../img/portfolio/image_seacrh_640.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .portfolio .project__shadow {
@@ -596,7 +606,20 @@ body {
   letter-spacing: 1px;
 }
 
+@media (max-width: 576px) {
+  .hero {
+    background-size: cover;
+    background-position: center top;
+  }
+}
 @media (min-width: 576px) {
+  .hero {
+    background-image: url("../img/hero/bg4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
   .about__box {
     display: flex;
     justify-content: space-evenly;
@@ -621,6 +644,15 @@ body {
   .contact__form-btn {
     flex-basis: 50%;
     padding: 1em;
+  }
+}
+@media (min-width: 700px) {
+  .hero {
+    background-image: url("../img/hero/bg6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 }
 @media (min-width: 768px) {
@@ -705,21 +737,18 @@ body {
     background-image: url("../img/portfolio/cinema-strip_1280.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
   }
   .portfolio .project__second {
     background-image: url("../img/portfolio/webstudio_1280.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
   }
   .portfolio .project__third {
     background-image: url("../img/portfolio/image_search_1280.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
   }
   .portfolio .project__title {
@@ -754,10 +783,20 @@ body {
     font-size: 2.8rem;
   }
   .hero {
-    background-image: url("../img/hero/portrait-657116_1280.jpg");
+    justify-content: flex-start;
+    background-image: url("../img/hero/bg6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top top;
+  }
+  .hero__text {
+    width: 70%;
   }
   .hero__heading {
     font-size: 5rem;
+    margin-top: 60px;
   }
   .about__title {
     font-size: 2.7rem;
