@@ -748,16 +748,17 @@ body {
   .hero {
 
     // background-image: url("../img/hero/mobile.png");
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center center;
+    // background-size: 30%;
+    // margin-left: 2em;
 
 
     &__text {
       width: 70%;
     }
     &__heading {
-      font-size: 5rem;
-      margin-top: 60px;
+      font-size: 6rem;
+  
     }
   }
 
