@@ -200,21 +200,18 @@ body {
   height: 75vh;
   text-align: center;
   margin-top: 2.2em;
-  @include bgImages("../img/hero/bg3.png");
-  background-position: center center;
+  @include bgImages("../img/hero/mobile.png");
+  background-position: top top;
 
-
-  background-attachment: scroll;
-
- .shadow {
-     position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: 1;
-    }
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
   &__heading {
     font-size: 3.2rem;
     font-weight: 200;
@@ -225,14 +222,12 @@ body {
   &__text {
     font-size: 2rem;
     z-index: 1;
-    
-
   }
   &__span {
     color: $greenishBlue;
   }
   &__btn {
-     margin-top: 2em;
+    margin-top: 2em;
     padding: 0.8em 1.6em;
     font-size: 1.5rem;
     background-color: $secondary-color;
@@ -384,7 +379,7 @@ body {
     border-radius: 6px;
     transition: transform 0.3s ease;
     z-index: 1;
-     background-attachment: fixed;
+    background-attachment: fixed;
 
     &__first {
       @include bgImages("../img/portfolio/cinema-strip_640.jpg");
@@ -547,25 +542,13 @@ body {
 // MEDIA
 // ===============================
 
-
-// ===================media max-width 576px====================//
-@media (max-width: 576px) {
- .hero {
-    background-size: cover;
-    background-position: center top;
-  }
-
-}
-
 //================media min-width 576px========================//
 
 @media (min-width: 576px) {
-
-   .hero {
-     @include bgImages("../img/hero/bg4.png");
-     background-position: top center;
-
-   }
+  .hero {
+    @include bgImages("../img/hero/mobile.png");
+    background-position: top center;
+  }
 
   .about {
     &__box {
@@ -604,15 +587,13 @@ body {
   }
 }
 
-
 // ===================media max-width 700px====================//
 @media (min-width: 700px) {
- .hero {
-     @include bgImages("../img/hero/bg6.png");
-     background-position: top center;
-    
-  }
+  //  .hero {
+  //      @include bgImages("..img/hero/tinywow_bg_29896731.png");
+  //      background-position: top center;
 
+  //   }
 }
 //================media min-width 768px========================//
 
@@ -650,7 +631,6 @@ body {
 
     &__btn {
       font-size: 1.8rem;
-  
     }
   }
   .nav {
@@ -767,17 +747,16 @@ body {
     }
   }
   .hero {
-    justify-content: flex-start;
-    @include bgImages("../img/hero/bg6.png");
+    background-image: url("../img/hero/mobile.png");
+    background-position: center;
     background-size: cover;
-    background-position: top top;
-    &__text{
+
+    &__text {
       width: 70%;
     }
-    &__heading {   
-      font-size: 5rem; 
+    &__heading {
+      font-size: 5rem;
       margin-top: 60px;
-     
     }
   }
 

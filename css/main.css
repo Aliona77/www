@@ -8,6 +8,7 @@ li {
 }
 
 img {
+  max-width: 100%;
   height: auto;
 }
 
@@ -299,12 +300,11 @@ body {
   height: 75vh;
   text-align: center;
   margin-top: 2.2em;
-  background-image: url("../img/hero/bg3.png");
+  background-image: url("../img/hero/mobile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
+  background-position: top top;
 }
 .hero .shadow {
   position: absolute;
@@ -606,15 +606,9 @@ body {
   letter-spacing: 1px;
 }
 
-@media (max-width: 576px) {
-  .hero {
-    background-size: cover;
-    background-position: center top;
-  }
-}
 @media (min-width: 576px) {
   .hero {
-    background-image: url("../img/hero/bg4.png");
+    background-image: url("../img/hero/mobile.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -644,15 +638,6 @@ body {
   .contact__form-btn {
     flex-basis: 50%;
     padding: 1em;
-  }
-}
-@media (min-width: 700px) {
-  .hero {
-    background-image: url("../img/hero/bg6.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: top center;
   }
 }
 @media (min-width: 768px) {
@@ -783,13 +768,9 @@ body {
     font-size: 2.8rem;
   }
   .hero {
-    justify-content: flex-start;
-    background-image: url("../img/hero/bg6.png");
-    background-size: cover;
+    background-image: url("../img/hero/mobile.png");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top top;
   }
   .hero__text {
     width: 70%;
