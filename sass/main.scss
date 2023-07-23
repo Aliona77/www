@@ -197,11 +197,11 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 2em;
-  height: 75vh;
+  height: 80vh;
   text-align: center;
   margin-top: 2.2em;
   @include bgImages("../img/hero/mobile.png");
-  background-position: top top;
+     
 
   .shadow {
     position: absolute;
@@ -379,7 +379,6 @@ body {
     border-radius: 6px;
     transition: transform 0.3s ease;
     z-index: 1;
-    background-attachment: fixed;
 
     &__first {
       @include bgImages("../img/portfolio/cinema-strip_640.jpg");
@@ -590,7 +589,7 @@ body {
 // ===================media max-width 700px====================//
 @media (min-width: 700px) {
   //  .hero {
-  //      @include bgImages("..img/hero/tinywow_bg_29896731.png");
+  //      @include bgImages("../img/hero/image-6000x6000.jpg");
   //      background-position: top center;
 
   //   }
@@ -747,9 +746,11 @@ body {
     }
   }
   .hero {
-    background-image: url("../img/hero/mobile.png");
+
+    // background-image: url("../img/hero/mobile.png");
     background-position: center;
-    background-size: cover;
+    background-attachment: fixed;
+
 
     &__text {
       width: 70%;

@@ -297,14 +297,14 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 2em;
-  height: 75vh;
+  height: 80vh;
   text-align: center;
   margin-top: 2.2em;
   background-image: url("../img/hero/mobile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-position: top top;
+  background-attachment: fixed;
 }
 .hero .shadow {
   position: absolute;
@@ -462,25 +462,27 @@ body {
   border-radius: 6px;
   transition: transform 0.3s ease;
   z-index: 1;
-  background-attachment: fixed;
 }
 .portfolio .project__first {
   background-image: url("../img/portfolio/cinema-strip_640.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .portfolio .project__second {
   background-image: url("../img/portfolio/webstudio_640.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .portfolio .project__third {
   background-image: url("../img/portfolio/image_seacrh_640.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .portfolio .project__shadow {
   position: absolute;
@@ -612,6 +614,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top center;
   }
   .about__box {
@@ -723,18 +726,21 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .portfolio .project__second {
     background-image: url("../img/portfolio/webstudio_1280.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .portfolio .project__third {
     background-image: url("../img/portfolio/image_search_1280.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .portfolio .project__title {
     font-size: 2.4rem;
@@ -768,9 +774,8 @@ body {
     font-size: 2.8rem;
   }
   .hero {
-    background-image: url("../img/hero/mobile.png");
     background-position: center;
-    background-size: cover;
+    background-attachment: fixed;
   }
   .hero__text {
     width: 70%;
