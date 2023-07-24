@@ -201,7 +201,6 @@ body {
   text-align: center;
   margin-top: 2.2em;
   @include bgImages("../img/hero/mobile.png");
-     
 
   .shadow {
     position: absolute;
@@ -586,14 +585,6 @@ body {
   }
 }
 
-// ===================media max-width 700px====================//
-@media (min-width: 700px) {
-  //  .hero {
-  //      @include bgImages("../img/hero/image-6000x6000.jpg");
-  //      background-position: top center;
-
-  //   }
-}
 //================media min-width 768px========================//
 
 @media (min-width: 768px) {
@@ -746,19 +737,15 @@ body {
     }
   }
   .hero {
-
-    // background-image: url("../img/hero/mobile.png");
-    background-position: center center;
-    // background-size: 30%;
-    // margin-left: 2em;
-
+    @include bgImages("../img/hero/laptop.png");
+    background-position: top center;
+    background-size: 67%;
 
     &__text {
       width: 70%;
     }
     &__heading {
       font-size: 6rem;
-  
     }
   }
 
